@@ -1,0 +1,16 @@
+<%
+#locals
+status ||= @status
+%>
+
+
+
+
+<div id="status">
+  <% less_form_for [@profile, status] do |f| %>
+    <%= f.text_field :description %>
+	  <div class="row button">
+    	<%= f.submit 'Save', :class=>'button' %>
+  	</div>
+  <% end %>
+</div>

@@ -1,0 +1,9 @@
+
+<div id="status">
+  <% less_form_for [@profile, @achievement] do |f| %>
+    <%= f.text_field :description %>
+	  <div class="row button">
+    	<%= f.submit 'Save', :class=>'button' %>
+  	</div>
+  <% end %>
+</div>
